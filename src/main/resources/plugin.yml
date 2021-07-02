@@ -1,0 +1,4 @@
+name: DiscoverRecipe
+version: ${project.version}
+main: com.bilicraft.discoverrecipe.DiscoverRecipe
+api-version: 1.17
