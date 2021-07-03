@@ -17,6 +17,7 @@ public final class DiscoverRecipe extends JavaPlugin implements Listener {
     public void onEnable() {
         // Plugin startup logic
         Bukkit.getOnlinePlayers().forEach(this::discoverRecipe);
+        Bukkit.getPluginManager().registerEvents(this,this);
     }
 
     @Override
