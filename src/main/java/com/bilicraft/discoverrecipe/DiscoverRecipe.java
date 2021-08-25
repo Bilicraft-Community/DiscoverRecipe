@@ -51,7 +51,9 @@ public final class DiscoverRecipe extends JavaPlugin implements Listener {
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     public void playerJoin(PlayerJoinEvent event) {
-        discoverRecipe(event.getPlayer());
+        Bukkit.getScheduler().runTaskLater(this,()->{
+            discoverRecipe(event.getPlayer());
+        },1);
     }
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
